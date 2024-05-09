@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: "android";
+    src: url(fontes/idroid.otf);
+}
+
+body{
+    background-color: rgb(139, 230, 180);
+    margin: 0px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 40px;
+    margin: 20px;
+}
+
+h1{ 
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+#subtitulo{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-image: linear-gradient(to bottom, rgb(125, 230, 125), rgb(69, 192, 69), rgb(5, 85, 5));
+    padding: 10px;
+}
+
+nav > a {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+
+main {
+    background-color: white;
+    padding: 10px 0px;
+    width: 840px;
+    margin: 0px auto 0px auto;    
+}
+
+.imagem { 
+    text-align: center;
+}
+
+.imagem > div {
+    background-color: rgb(14, 58, 14);
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    font-family: "android", sans-serif;
+    color: rgb(7, 95, 7);
+    margin: 20px;
+}
+
+h3 {
+    font-family: "android", sans-serif;
+    color: rgb(7, 95, 7);
+    background-image: linear-gradient(to right, rgba(139, 230, 180, 0.788), rgb(183, 216, 197), white);
+    margin: 20px;
+}
+
+.fundinho {
+    width:790px;
+    background-color: #c5ebd6;
+    border-radius: 2%;
+    margin: 10px auto;
+    overflow: hidden;
+    
+}
+
+.fundinho > p {
+    margin: 15px;
+
+}
+
+.paragrafinho {
+    background-color: #2fa866;
+    border-radius: 2%;
+
+}
+
+.paragrafinho > h4{
+    padding: 10px;
+    margin: 0px;
+    color: white;
+}
+
+ul {
+    column-count: 2;
+}
+
+li::before{ 
+    content: "\1F5F8"; 
+}
+
+li {
+    list-style: none;
+}
+
+footer {
+    background-color: rgb(10, 73, 10);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+/* CONFIGURAÇÕES DE LINKS  E PALAVRAS*/
+
+.cor {
+    color: rgb(9, 82, 9);
+    font-weight: bold;
+    text-shadow:rgba(0, 0, 0, 0.651) 1px 1px 2px;
+}
+
+a {
+    font-weight: bolder;
+    color: rgb(9, 82, 9);
+    text-decoration: none;
+}
+
+footer > a {
+    color: white;
+}
+
+footer > a:hover {
+    color: rgb(9, 82, 9);
+    background-attachment: local;
+    background-color: white;
+}
+
+a:hover {
+    color: white;
+    background-attachment: local;
+    font-weight: bolder;
+    background-color: rgb(9, 82, 9);   
+}
