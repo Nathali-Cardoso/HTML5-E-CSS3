@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+        
+
+            /* Shorthand para o background, como na ordem acima
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed; 
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkcyan;
@@ -34,6 +43,10 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident dolorem facere voluptate obcaecati hic suscipit omnis, itaque mollitia corrupti labore quas possimus iste reiciendis sequi harum nisi, delectus enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea incidunt, ipsa quam sunt molestias reiciendis voluptas. Soluta ipsum atque explicabo nisi? Odio illo, voluptatibus voluptatum pariatur reprehenderit quaerat aut quibusdam?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius rerum fugit dignissimos harum consectetur accusantium ad corporis, excepturi error mollitia labore autem molestias exercitationem optio fuga, cupiditate distinctio velit non?
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo natus in dolore perspiciatis corporis quis harum, reprehenderit repellat laudantium delectus id at excepturi! Ullam voluptate unde at totam atque reiciendis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aut illo, ad, alias, praesentium at soluta expedita officia voluptas assumenda molestiae? Itaque deleniti sit officiis iusto praesentium sed enim distinctio.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. A dolores dolor, odio libero architecto eius praesentium corporis, necessitatibus rem numquam molestiae obcaecati ipsa ipsum, mollitia tempora. Amet corporis dolor repudiandae?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, odio corrupti? Praesentium odio dignissimos earum, cum reprehenderit voluptatibus deserunt consectetur quo. Architecto nisi eligendi quam natus explicabo quibusdam esse mollitia?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita cum aliquid tempora earum vero possimus alias fugiat quibusdam modi eum molestiae, doloremque ad veniam aperiam adipisci at. Quasi, blanditiis ipsum.
         </p>
     </main>
 </body>
