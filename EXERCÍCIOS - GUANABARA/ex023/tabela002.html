@@ -11,7 +11,7 @@
         }
 
         table {
-            width: 500px;
+            width: 400px;
             border-collapse: collapse;
         }
 
@@ -19,6 +19,7 @@
             font-size: 1.5em;
             font-weight: bold;
             border: 1px solid black;
+            padding: 10px;
             background-color: cadetblue;
 
         }
@@ -35,8 +36,13 @@
         td.num {
             text-align: right;
         }
+/* Configuração abaixo serve para deixar o efeito zebrado, podendo colocar dentro de child() ser odd (impar) e even (par) ou a quantidade de intervalos, como por exemplo 2n*/
 
-        tfoot {
+        tbody > tr:nth-child(2n) {
+            background-color: violet;
+        }
+
+        tfoot, thead{
             background-color: darkgray;
             color: white;
         }
@@ -55,8 +61,8 @@
         <thead>
             <caption>População das Unidades Federativas do Brasil</caption>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -126,7 +132,7 @@
             </tr>
         <tfoot>
             <tr>
-                <th>Total de Habitantes do Brasil</th>
+                <th scope="row">Total de Habitantes do Brasil</th>
                 <td class="num">203.062.512</td>
             </tr>
         </tfoot>
