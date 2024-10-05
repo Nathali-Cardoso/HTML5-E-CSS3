@@ -25,17 +25,24 @@
             font-weight: bold;
             padding: 10px;
             background-color: rgb(113, 148, 150);
+            border: 1px solid black;
         }
 
         thead, tfoot {
-            background-color: rgb(82, 82, 82);
+            background-color: rgb(107, 107, 107);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(107, 107, 107);
         }
 
         /* Configuração abaixo serve para deixar o efeito zebrado, podendo colocar dentro de child() ser odd (impar) e even (par) ou a quantidade de intervalos, como por exemplo 2n */
 
-        table > tbody > tr:nth-child(odd) {
-            background-color: rgb(231, 22, 231);
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(185, 132, 185);
         }
 
         td.num {
@@ -48,12 +55,13 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes 
      TABLE
+        CAPTION
         THEAD - tr, td, th
         TBODY - tr, td, th
         TFOOT - tr, td, th
         -->
     <table>
-        <caption>População das Unidades Federativas do Brasil</caption>
+        <caption>População das Unidades Federativas do Brasil</caption> <!-- Cabeçalho da tabela -->
         <thead>
             <tr>
                 <th scope="col">Estado</th>
@@ -132,5 +140,7 @@
             </tr>
         </tfoot>
     </table>
+    
 </body>
+
 </html>
