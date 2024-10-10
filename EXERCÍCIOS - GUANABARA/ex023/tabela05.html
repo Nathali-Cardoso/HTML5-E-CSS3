@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        col.cnome {
+            background-color: rgba(238, 130, 238, 0.397);
+        }
+
+        col.csexo{
+            background-color: rgba(64, 224, 208, 0.479);
+        }
+
+        col.cidade {
+            background-color: rgba(165, 42, 42, 0.404);
+        }
+
+        col.cprof {
+            background-color: rgba(0, 128, 128, 0.507);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Destacando Colunas e Linhas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Nathali</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Programadora</td>
+        </tr>
+        <tr>
+            <td>Jéssica</td>
+            <td>F</td>
+            <td>33</td>
+            <td>Consultora Comgás</td>
+        </tr>
+        <tr>
+            <td>Vilma</td>
+            <td>F</td>
+            <td>58</td>
+            <td>Dona de Casa</td>
+        </tr>
+        <tr>
+            <td>Monica</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Auxiliar de Classe</td>
+        </tr>
+        <tr>
+            <td>Solange</td>
+            <td>F</td>
+            <td>43</td>
+            <td>Auxiliar de Classe</td>
+        </tr>
+
+
+
+
+    </table>
+    
+</body>
+</html>
