@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isfem" value="F"> <label for="isfem">Feminino</label> <br>
+            <input type="radio" name="sexo" id="ismas" value="M"> <label for="ismas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isnb" value="NB"> <label for="isnb">Não-Bínário</label> <br>
+            <input type="radio" name="sexo" id="itran" value="T"> <label for="itran">Transgênero</label> <br>
+            <input type="radio" name="sexo" id="isint" value="I"> <label for="isint">Intersexo</label> <br>
+            <input type="radio" name="sexo" id="isnr" value="NR"> <label for="isnr">Prefiro não responder</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol"> <label for="iesvol">Volei</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+            <input type="checkbox" name="eship" id="ieship"> <label for="ieship">Hipismo</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
