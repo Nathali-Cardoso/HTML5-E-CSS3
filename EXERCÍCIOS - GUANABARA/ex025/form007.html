@@ -9,7 +9,7 @@
     <h1>Exemplo de Formulário</h1>
     <p>
         <label for="iest">Estado</label>
-        <select name="estado" id="iest">
+        <select name="estado" id="iest" >
             <optgroup label="Centro-Oeste">
                 <option value="DF">Distrito Federal</option>
                 <option value="GO">Goias</option>
@@ -49,6 +49,22 @@
             </optgroup>
             <optgroup></optgroup>
         </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option>Desenvolvedora WEB</option>
+            <option>Contabilista</option>
+            <option>Professora</option>
+            <option>Administradora</option>
+        </datalist>
+    </p>
+
+    <p>
+        <label for="imsg">Mensagem: </label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
     </p>
 
     <p>
