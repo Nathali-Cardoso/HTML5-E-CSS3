@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Estilo para impressoras */
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+
+    /* Comando utilizado para retirar o menu do arquivo quando for solicitado sua impressão */
+}
+
+
+article::after {
+    content: 'Este artigo foi desenvolvido pela aluna Nathali Cardoso seguindo o auxílio do professor Guanabara, site www.CursoEmVideo.com';
+}
