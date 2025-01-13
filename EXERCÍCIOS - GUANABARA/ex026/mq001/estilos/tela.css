@@ -16,6 +16,10 @@ header {
     background-color: rgb(192, 192, 192);
 }
 
+header > h1 {
+    text-align: center;
+}
+
 menu ul {
     list-style-type: none;
     background-color: gray;
